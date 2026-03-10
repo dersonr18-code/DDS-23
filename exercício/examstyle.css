@@ -1,0 +1,17 @@
+header{
+    background-color: gray;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+}
+
+body{
+    text-align: center;
+    background-color:red;
+}
+
+main{
+    background-color: greenyellow;
+    margin: 70px;
+
+}
