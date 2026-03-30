@@ -1,4 +1,10 @@
 {
     "liveServer.settings.port": 5501,
-    "livePreview.defaultPreviewPath": "/04-AULA/index.html"
+    "livePreview.defaultPreviewPath": "/04-AULA/index.html",
+    "editor.accessibilitySupport": "off",
+    "editor.inlineSuggest.showToolbar": "onHover",
+    "editor.inlineSuggest.suppressInSnippetMode": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "editor.inlineSuggest.edits.showLongDistanceHint": false,
+    "editor.inlineSuggest.experimental.emptyResponseInformation": false
 }
