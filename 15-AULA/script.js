@@ -1,4 +1,4 @@
-
+/*
 // VAMO QUE VAMO
 console.log("VAMO Q VAMO")
 
@@ -27,7 +27,6 @@ while(c < 10){
 
 console.log("Finalizei o loop denovo")
 
-
 // ARRAY 
 var array = ["Neymar", 10, true, 5.0]
 
@@ -41,4 +40,120 @@ array[2] = "Jogador"
 
 // mostra todo o array
 console.log(array)
+
+*/
+
+// COMENTEI TUDO AQUI PRA CIMA
+
+/*
+// Lista de times top (mais ou menos)
+var times = ["Brasil", "Real Madrid", "Gama", "Santos", "Paysandu"]
+
+for(var i = 0; i < 2; i++){
+    console.log("O time tual é:", times[i])
+}
+
+// lenght - descobre o tamanho do array
+console.log(times.length);
+
+console.log("------------------");
+// Faz a repetição até o fim do array
+// independente do tamanho, com o .lenght
+for(var i = 0; i < times.length; i++){
+    console.log("O time atual é:", times[i])
+}
+
+console.log("-------------------");
+// FOR ESPECIFICO DE ARRAY
+// index - guarda o valor do indice
+// in - usa o valor do indice pra mostrar o elemento
+// times - define o array
+for(var index in times){
+    console.log("Indice atual", index)
+    console.log("valor do indice atual:", times [index])
+}
+
+// of - já sabe o valor do elemento
+for(var index of times){
+    console.log(index)
+}
+
+*/
+
+// FUNÇÕES PARA INTERAGIR COM UM ARRAY
+
+// array inicial
+var frutas = ["Maçã", "Pêra", "Banana"]
+
+// mostra o array
+console.log(frutas)
+
+// push() - aidiciona no fim do array
+frutas.push("Uva")
+
+// mostra o array
+console.log(rutas);
+
+// PRA ADIÇÃO DE ELEMENTOS
+// push() - adiciona no fim do array
+frutas.push("Uva")
+// mostra o array
+console.log(frutas);
+
+// unshit - adiciona no início do array
+frutas.unshift("Laranja")
+// mostra o array
+console.log(frutas);
+
+//PRA REMOÇÃO DE LEEMENTOS
+// pop - remove o último elemento
+var frutaTirada = frutas.pop()
+console.log("Fruta removida:", frutaTirada);
+
+//shift - remove o primeiro elemento
+var exPrimeiraFruta = frutas.shift()
+console.log("Ex primeira fruta:", exPrimeiraFruta);
+
+// descobrir o index de um elemento
+var index = frutas.inbox("Pêra")
+console.log("O index dele é:", index);
+
+// descobrir se há um valor específico no array
+console.log("Tem pitu?:", frutas.includes("Pitu"));
+console.log("tem maçã?:", frutas.includes("Maçã"));
+
+// ordena os elementos
+frutas.sort()
+console.log(frutas);
+
+// Inverte a ordem dos elementos do array
+frutas.reverse()
+console.log(frutas);
+
+// convertendo o a array para string
+// converte todo o array
+console.log("Convertido:", frutas.toString());
+
+// junta um array, ou converte colocando um separador
+console.log("Convertido:", frutas.join(" - "));
+
+// SLICE - copia parte do array
+var copiaParte = frutas.slice(0,2)
+console.log("Cópia:", copiaParte)
+
+// SPLICE 
+// PRA REMOVER
+// (de onde começa, quantos elementos serão tirados)
+var removidos =  frutas.splice(1,1)
+console.log("Após remoção:",frutas)
+
+// PRA ADICIONAR
+frutas.splice(1,0, "Pitaya", "Melancia", "Morango")
+console.log("Após adição:",frutas)
+
+//
+frutas.splice(2,1, "Arroz")
+console.log("Após substituição:",frutas)
+
+
 
